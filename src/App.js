@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 
@@ -28,11 +27,17 @@ function App(props) {
     //     {props.isOpen ? "Open":"Closed"}
     // </div>
 
-    const [islit,setlit] = useState(true);
+    const [islit,setlit] = useState(false);
+    const brightness = islit ? "lit":"dark";
 
- //--------Background on/off Cmoponent------//
- return <div className="room">THE ROOM IS {islit? 'LIT' : 'DARK'}</div>   
-
+ //--------Background on/off Component------//
+ return <div  className={`room ${brightness}`}>
+ <div className="room">
+     THE ROOM IS {islit? 'LIT' : 'DARK'}
+  <br />
+  <button onClick={() => setlit(!islit)}>Flip</button>
+  </div>   
+  </div>
 }
 
 export default App;

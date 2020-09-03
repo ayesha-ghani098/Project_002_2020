@@ -9,7 +9,7 @@ ReactDOM.render(
     // Product Code : JKT-086
     // Outer: 100% Cotton, Lining: 65% Polyester, 35% Cotton"/>,
 
-    <App isOpen={false} />,
+    <App/>,
     document.getElementById('root')
 );
 

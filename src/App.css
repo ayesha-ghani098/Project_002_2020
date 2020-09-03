@@ -2,3 +2,17 @@
   background-color: black;
   color: white;
 }
+
+html, body, #root, .room{
+height: 100%;
+margin: 0;
+}
+
+.lit{
+  background-color: antiquewhite;
+  color: black;
+}
+.dark{
+  background-color: blueviolet;
+  color: white;
+}
